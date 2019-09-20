@@ -24,15 +24,15 @@ a {
   color: #AAD1E2;
 }
 
-#Projects {
+#projects {
   padding:1%;
 }
 
-#AboutMe {
+#about {
   padding:1%;
 }
 
-#Contact {
+#contact {
   padding:1%;
 }
 
@@ -54,64 +54,79 @@ h4 {
   margin-inline-end: 0px;
 }
 
-.Projects{
-  display: none;
+#triplets{
+  width: 75vw;
+  height: 33vh;
 }
 
-.descrip {
-  width = 50vw;
+#retirement{
+  width: 70vw;
+  height: 33vh;
+  text-align: right;
 }
 
-.projpic {
-  display: block;
-  height: 30vw;
+#bristolbay{
   width: 50vw;
+  height:45vh;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#triplettext {
+  margin-top: 2vw;
+  width: 35vw;
+  position: absolute;
+  left: 5vw;
+}
+
+#retiretext {
+  margin-top: 1.5vw;
+  position: absolute;
+  text-align: left;
+  right: 10vw;
+  width: 42vw;
+}
+
+#baytext {
+  margin-top: 1.5vw;
+  color: gray;
+  position: absolute;
+  width: 57vw; 
+  left: 15vw;
+}
+
+.projects {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../documents/Retirement.png), url(../documents/cloth.png),  url(../documents/Bristol_Bay_pic.png);
+  background-position: right center, top left, bottom left;
+  background-repeat: no-repeat;
+  padding: 0%;
+  margin-top: 0%;
+  margin-left: 0%;
+}
+
+.about {
+  display: none;
+  width: 60vw;
+  color:#63A8C7;
+  text-align: left;
+  margin-top: 10vh;
+  margin: auto;  
+}
+
+.uparrow {
+  display: none;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1vh;
+  width: 50%;
 }
 
-#Triplets{
-  width = 100vw;
-  background-image: url(../documents/cloth.png);
-  background-repeat: repeat-x;
-  background-attachment: fixed;
-  background-size: 100vw 40vh;
-}
-
-#Retirement{
-  width: 100vw;
-  background-image: url(../documents/Retirement.png);
-  background-repeat: repeat-x;
-  background-attachment: fixed;
-  background-size: 100vw 40vh;
-  
-}
-
-#BristolBay{
-  width: 100vw;
-  background-image: url(../documents/Bristol_Bay_pic.png);
-  background-repeat: repeat-x;
-  background-attachment: fixed;
-  background-size: 100vw 40vh;
-}
-
-#About {
-  display: none;
-  padding: 10%
-  display: flex;
-  color:#873444;
-  width: 50vw;
-  margin: auto;
-  margin-top: 10%;
-}
-
-#abouttext { 
-  font-size: 1em;
-  margin: auto; /* Important */ 
-  text-align: left;
-}
-
-
-.Contact {
+.contact {
   display: none;
 }

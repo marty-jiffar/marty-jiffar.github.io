@@ -1,19 +1,21 @@
 $(document).ready(function() {
     
-    $("#Projects").click(function() {
-        $(".homepage").css('display', 'none');
-        $(".Projects").css('display', 'block');
+    $("#projects").click(function() {
+        $.when($(".homepage").fadeOut(700))
+        .done(function() {
+            $(".projects").fadeIn(700)
+        });
     });
     
-    $("#AboutMe").click(function() {
+    $("#about").click(function() {
         $(".homepage").css('display', 'none');
-        $("#About").css('display', 'block');
+        $(".about").css('display', 'block');
         
     });
     
-    $("#Contact").click(function() {
+    $("#contact").click(function() {
         $(".homepage").css('display', 'none');
-        $(".Contact").css('display', 'block');
+        $(".contact").css('display', 'block');
     });
 
 });
