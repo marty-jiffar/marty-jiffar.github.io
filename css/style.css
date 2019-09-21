@@ -118,12 +118,12 @@ p {
 }
 
 .parallax {
-  background-image: url(../documents/cloth.png);
-  background-position: center;
-  background-repeat: repeat-y;
-  background-attachment: fixed;
-  background-size:cover;
+  background-image: url('../documents/cloth.png');
   height:100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .about {
