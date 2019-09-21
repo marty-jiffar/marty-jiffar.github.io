@@ -61,7 +61,7 @@ h4 {
 
 #triplets{
   width: 35vw;
-  height: 70vh;
+  height: 50vh;
 }
 
 .box {
@@ -86,7 +86,7 @@ p {
 }
 
 #triplettext {
-  margin-top: 15vw;
+  margin-top: 45vh;
   width: 25vw;
   position: absolute;
   left: 10vw;
@@ -94,7 +94,7 @@ p {
 }
 
 #retiretext {
-  margin-top: 1.5vw;
+  margin-top: 10vh;
   position: absolute;
   text-align: left;
   right: 10vw;
@@ -103,7 +103,7 @@ p {
 }
 
 #baytext {
-  margin-top: 0vw;
+  margin-top: 20vh;
   color: #FFFFFF;
   position: absolute;
   width: 57vw; 
@@ -117,8 +117,26 @@ p {
   height: 100vh;
 }
 
-.parallax {
+.parallax1 {
   background-image: url('../documents/cloth.png');
+  height:100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  background-image: url('../documents/Retirement.png');
+  height:100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3 {
+  background-image: url('../documents/Bristol_Bay_pic.png');
   height:100%;
   background-attachment: fixed;
   background-position: center;
