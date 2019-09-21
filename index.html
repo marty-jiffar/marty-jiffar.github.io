@@ -3,6 +3,7 @@
     <head>
         <title>Marty Jiffar</title>
         <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     
     <body>
@@ -10,24 +11,28 @@
     
             <div class="homepage">
                 <div class = "categories">
-                    <span id="resume"><a href="documents/Marty_Resume.pdf">Resume</a></span>
-                    <span id="projects">Projects</span>
-                    <span id="about">About</span>
-                    <span id="contact">Contact</span>
+                    <span id="resume"><a href="documents/Marty_Resume.pdf">resume</a></span>
+                    <span id="projects">projects</span>
+                    <span id="about">about</span>
+                    <span id="contact">contact</span>
                 </div>
             </div>
         </div>
         
+        
         <div class = "projects">
+            <div class="parallax"></div>
             <div style="float:left;" id="triplets">
                 <div id="triplettext">
                 <a href='https://github.com/marty-jiffar/triplets'>
                 <h3>Cloth Perception Experiment</h3></a>
-                    <h4><em>Description:</em></h4>
+                <div class="box">
+                <h4><em>Description:</em></h4>
                 <p>An ongoing experiment at American University studying human perception of simulated cloths.</p>
                     <br>
                     <h4><em>Languages:</em></h4>
                     <p>Python, JavaScript, HTML, CSS</p>
+                    </div>
                 </div>
             </div>
             
@@ -35,11 +40,13 @@
                 <div id="retiretext">
                 <a href='https://github.com/marty-jiffar/Retirement-Calculator'>
                 <h3>Retirement Calculator</h3></a>
+                    <div class="box">
                     <h4><em>Description:</em></h4>
                     <p>Inspired by <a href="https://firecalc.com" style="color:lightpink; text-decoration: :none;">FireCalc</a>, a calculator that uses data from the S&ampP 500 to determine how a given retirement portfolio and yearly spending would have fared historically.</p>
                     <br>
                     <h4><em>Languages:</em></h4>
                     <p>Python</p>
+                    </div>
                 </div>
             </div>
                 
@@ -48,14 +55,18 @@
                 <br>
                 <h3>Bristol Bay Pay Day</h3>
             <br>
+                    <div class="box">
                     <h4><em>Description:</em></h4>
                 <p>Inspired by my first salmon season in Alaska last summer. It is a predictive model that uses previous years' ex-vessel salmon prices and economic data from the United States and Japan (where a large portion of Alaskan salmon is sold) to estimate an answer to a question on every fisherman's mind: what's the price per pound this season?</p>
                     <br>
                     <h4><em>Languages:</em></h4>
                     <p>Python</p>
+                    </div>
             </div>
             </div>
+            <div class="parallax"></div>
         </div>
+        
                 
                 
         <div class = "about">
@@ -71,8 +82,7 @@
         </div>
                 
         <div class = "contact">
-            <span class="linkedin"><a href="https://www.linkedin.com/in/marty-jiffar-896289120/"></a>LinkedIn</span>
-            <span class="email"><a href="mailto:marty.jiffar@gmail.com">Email</a></span>
+            <span id="linkedin"><a href="https://www.linkedin.com/in/marty-jiffar-896289120/" style = "text-decoration: none;">linkedin</a></span><!----><span id="email"><a href="mailto:marty.jiffar@gmail.com" style = "text-decoration: none;">email</a></span>
         </div>
         
         <div class = "uparrow">
@@ -81,6 +91,7 @@
                 
         
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.0.2/dist/simpleParallax.min.js"></script>
         <script src='javascripts/site.js'></script>
     </body>
     

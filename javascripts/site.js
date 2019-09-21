@@ -8,14 +8,17 @@ $(document).ready(function() {
     });
     
     $("#about").click(function() {
-        $(".homepage").css('display', 'none');
-        $(".about").css('display', 'block');
-        
+        $.when($(".homepage").fadeOut(700))
+        .done(function() {
+            $(".about").fadeIn(700)
+        });
     });
     
     $("#contact").click(function() {
-        $(".homepage").css('display', 'none');
-        $(".contact").css('display', 'block');
+        $.when($(".homepage").fadeOut(700))
+        .done(function() {
+            $(".contact").fadeIn(700)
+        });
     });
 
 });
