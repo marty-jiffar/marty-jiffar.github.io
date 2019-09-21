@@ -76,10 +76,10 @@ p {
 }
 
 #triplettext {
-  margin-top: 2vw;
-  width: 35vw;
+  margin-top: 5vw;
+  width: 25vw;
   position: absolute;
-  left: 5vw;
+  left: 10vw;
 }
 
 #retiretext {
@@ -91,19 +91,19 @@ p {
 }
 
 #baytext {
-  margin-top: 1.5vw;
+  margin-top: 0vw;
   color: gray;
   position: absolute;
   width: 57vw; 
-  left: 15vw;
+  left: 30vw;
 }
 
 .projects {
   display: none;
   width: 100vw;
   height: 100vh;
-  background-image: url(../documents/Retirement.png), url(../documents/cloth.png),  url(../documents/Bristol_Bay_pic.png);
-  background-position: right center, top left, bottom left;
+  background-image: url(../documents/cloth.png), url(../documents/Retirement.png), url(../documents/Bristol_Bay_pic.png);
+  background-position: 10% 5%, 75% 25%, 50% 100%;
   background-repeat: no-repeat;
   padding: 0%;
   margin-top: 0%;
