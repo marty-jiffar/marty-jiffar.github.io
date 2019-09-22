@@ -3,11 +3,11 @@ $(document).ready(function() {
     $.when($("#namebox").fadeIn(1000))
     .done(function() {
         $(".fixed-nav-bar").fadeIn(300);
-        $("#name").fadeIn(300);
-        $("#resume").fadeIn(500);
+        $("#name").fadeIn(800);
+        $("#resume").fadeIn(900);
         $("#projects").fadeIn(1500);
         $("#about").fadeIn(3000);
-        $("#contact").fadeIn(4500);
+        $("#contact").fadeIn(3500);
     });
     
     $("#projects").click(function() {
