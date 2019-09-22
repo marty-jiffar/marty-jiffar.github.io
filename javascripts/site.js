@@ -1,7 +1,9 @@
 $(document).ready(function() {
     
-    $.when($("#name").fadeIn(1000))
+    $.when($("#namebox").fadeIn(1000))
     .done(function() {
+        $(".fixed-nav-bar").fadeIn(300);
+        $("#name").fadeIn(300);
         $("#resume").fadeIn(500);
         $("#projects").fadeIn(1500);
         $("#about").fadeIn(3000);
