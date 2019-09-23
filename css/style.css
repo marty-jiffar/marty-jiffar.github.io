@@ -10,17 +10,39 @@ html {
   height:100%;
 }
 
+#top, #bottom, #left, #right {
+    display: none;
+	background: #F64C72;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
 #namebox {
   display: none;
-  width: 50vw;
-  height: 45vh;
+  width: 45vw;
+  height: 40vh;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url(../documents/plants.jpg);
+  background-image: url(../documents/nameimg2.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  border-style: solid;
+  border-color: white;
 }
 
 #name {
@@ -76,6 +98,8 @@ html {
   left: 30%;
   transform: translate(0%, -50%);
   display:none;
+  padding:7%;
+  text-decoration: underline;
 }
 
 #about{
@@ -84,6 +108,8 @@ html {
   right: 30%;
   transform: translate(0%, -50%);
   display:none;
+  padding:7%;
+  text-decoration: underline;
 }
 
 #contact {
@@ -92,26 +118,13 @@ html {
   right:10%;
   transform: translate(0%, -50%);
   display:none;
+  padding:7%;
+  text-decoration: underline;
 }
 
 #resume a {
   padding:7%;
   color: #FFFFFF;
-}
-
-#projects {
-  padding:7%;
-  text-decoration: underline;
-}
-
-#about {
-  padding:7%;
-  text-decoration: underline;
-}
-
-#contact {
-  padding:7%;
-  text-decoration: underline;
 }
 
 .projects h3 {
@@ -132,54 +145,115 @@ html {
   margin-inline-end: 0px;
 }
 
-#triplets{
-  width: 35vw;
-  height: 50vh;
-}
 
 .box {
-  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  border-style: solid;
+  border-color: white;
 }
 
-#retirement{
-  width: 70vw;
-  height: 40vh;
-  text-align: right;
+.proj {
+  width: 100vw;
+  height: 100vh;
+}
+
+.scroll {
+  display: none;
+  margin-top: 80vh;
+}
+
+.scroll p {
+  text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: black;
+  font-size: 1.5em;
+  -webkit-text-stroke: 0.3px white;
+  text-shadow:
+       2px 2px 0 #FFF,
+     -1px -1px 0 #FFF,  
+      1px -1px 0 #FFF,
+      -1px 1px 0 #FFF,
+       1px 1px 0 #FFF;
+}
+
+#down.scroll {
+  float: right;
+  margin-right: 10vw;
+}
+
+#home.scroll {
+  float: left;
+  margin-left: 10vw;
+}
+
+#clothbox {
+  width: 40vw;
+  height: 55vh;
+  left: 10vw;
+  margin-top: 30vh;
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  background-size: cover;
+    opacity: .6;
+    z-index: 1;
+}
+
+#clothbox::before{
+  background-image: url(../documents/sticks.jpg);
+}
+
+#retirebox::before{
+  background-image: url(../documents/retirebox.jpg);
+}
+
+#baybox::before{
+  background-image: url(../documents/baybox.jpg);
+}
+
+#retirebox {
+  width: 40vw;
+  height: 50vh;
+  right: 10vw;
+  margin-top: 20vh;
+}
+
+#baybox {
+  width: 40vw;
+  height: 60vh;
+  left: 15vw;
+  margin-top: 15vh;
 }
 
 #retirement a{
   padding:0;
 }
 
-#bristolbay{
-  width: 50vw;
-  height:45vh;
-}
-
-#triplettext {
-  margin-top: 15vh;
-  width: 25vw;
-  position: absolute;
-  left: 10vw;
-  color: #99738E;
-}
-
-#retiretext {
-  margin-top: 10vh;
-  position: absolute;
-  text-align: left;
-  right: 10vw;
-  width: 42vw;
-  color:#99738E;
-  display: inline-block;
-}
-
-#baytext {
-  margin-top: 20vh;
-  color: #99738E;
-  position: absolute;
-  width: 57vw; 
-  left: 30vw;
+.text {
+  position:relative;
+  -webkit-text-stroke: 0.3px white;
+  text-shadow:
+       2px 2px 0 #FFF,
+     -1px -1px 0 #FFF,  
+      1px -1px 0 #FFF,
+      -1px 1px 0 #FFF,
+       1px 1px 0 #FFF;
+  color: black;
+  font-size: 1.1em;
+  margin-top: 2vh;
+  margin-left: 1vw;
+  width: 35vw;
+  height: 47vh;
+  z-index: 100;
 }
 
 .projects {
@@ -190,7 +264,7 @@ html {
 }
 
 .parallax1 {
-  background-image: url('../documents/cloth.jpg');
+  background-image: url('../documents/flowers.jpg');
   height:100%;
   background-attachment: fixed;
   background-position: center;
@@ -199,7 +273,7 @@ html {
 }
 
 .parallax2 {
-  background-image: url('../documents/Retirement.png');
+  background-image: url('../documents/retirement.jpg');
   height:100%;
   background-attachment: fixed;
   background-position: center;
@@ -208,7 +282,7 @@ html {
 }
 
 .parallax3 {
-  background-image: url('../documents/Bristol_Bay_pic.png');
+  background-image: url('../documents/Bristol_Bay_Pic2.jpg');
   height:100%;
   background-attachment: fixed;
   background-position: center;
@@ -218,43 +292,39 @@ html {
 
 .about {
   display: none;
-  width: 80vw;
-  height: 90vh;
+  width: 100vw;
+  height: 100vh;
   color:#FFFFFF;
   text-align: left;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url(../documents/sky.jpg);
+}
+
+.parallax4 {
+  background-image: url('../documents/about.jpg');
+  height:100%;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-#abouttext {
-  position:absolute;
+.aboutpar {
   width: 60vw;
-  top: 50%;
-  left:50%;
-  color: white;
-  transform: translate(-50%, -50%);
-  font-size: 1.1em;
+  height: 60vh;
+font-size: 2em;
 }
 
-.uparrow {
-  display: none;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1vh;
-  width: 50%;
+.aboutpar p {
+  margin-top:5vw;
+  width: 55vw;
+  position: absolute;
+  left: 30vw;
+  color: #FFF;
 }
 
 .contact {
   width: 40vw;
   height: 20vw;
   display: none;
-  font-size: 2.2em;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -263,14 +333,26 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-style: solid;
+  border-color: white;;
 }
 
 #contacttext {
   position: absolute;
-  font-size: 1.5em;
-  left: 50%;
+  font-size: 2.2em;
+  margin-left: 1vw;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(0, -50%);
+}
+
+#linkedin, #email {
+  font-size: 1.7em;
+}
+
+#contacttext a{
+  color: #F64C72;
+  text-decoration-color: #F64C72;
+  padding:3%;
   -webkit-text-stroke: 1px white;
   text-shadow:
        2px 2px 0 #FFF,
@@ -278,14 +360,4 @@ html {
       1px -1px 0 #FFF,
       -1px 1px 0 #FFF,
        1px 1px 0 #FFF;
-}
-
-#linkedin{
-  color:#F64C72;
-    padding:5%;
-}
-
-#email{
-  color:#2F2FA2;
-    padding:5%;
 }
