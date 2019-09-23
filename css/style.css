@@ -29,10 +29,124 @@ html {
 		#top { top: 0; }
 		#bottom { bottom: 0; }
 
+@media (min-width: 1000px) {
+    #namebox {
+      width: 45vw;
+      height: 40vh;
+    }
+    
+    #name {
+      font-size: 5em;
+      text-shadow:
+       3px 3px 0 #FFF,
+     -1px -1px 0 #FFF,  
+      1px -1px 0 #FFF,
+      -1px 1px 0 #FFF,
+       1px 1px 0 #FFF;
+    }
+    
+    .categories {
+        font-size: 1.5em;
+    }
+    
+    #resume {
+        left: 15%;
+    }
+    
+    #projects {
+        left: 30%;
+        padding:7%;
+    }
+    
+    #about {
+        right: 30%;
+        padding:7%;
+    }
+    
+    #contact {
+        right:10%;
+        padding: 7%;
+    }
+    
+    #resume a {
+        padding:7%;
+        
+    }
+    
+    .proj {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .projects h3 {
+        font-size: 2.2em;
+    }
+    
+    .projects h4 {
+        font-size: 1em;
+    }
+    
+    .proj {
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .scroll{
+      margin-top: 80vh;
+    }
+    
+    #clothbox {
+        width: 40vw;
+        height: 55vh;
+        left: 10vw;
+        margin-top: 30vh;
+    }
+    
+    #retirebox {
+        width: 40vw;
+        height: 50vh;
+        right: 10vw;
+        margin-top: 20vh;
+        }
+
+    #baybox {
+        width: 40vw;
+    height: 60vh;
+        left: 15vw;
+        margin-top: 15vh;
+    }
+    
+    .text {
+        width: 35vw;
+        height: 47vh;
+    }
+    
+    .aboutpar {
+  width: 60vw;
+  height: 60vh;
+  font-size: 2em;
+}
+    .aboutpar p {
+  margin-top:5vw;
+  width: 55vw;
+  left: 30vw;
+}
+    
+    .contact {
+  width: 40vw;
+  height: 20vw;
+}
+    #contacttext {
+        font-size: 2.2em;
+    }
+    
+    #linkedin, #email {
+  font-size: 1.7em;
+}
+}
+
 #namebox {
   display: none;
-  width: 45vw;
-  height: 40vh;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -52,21 +166,13 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-text-stroke: 1px white;
-    text-shadow:
-       3px 3px 0 #FFF,
-     -1px -1px 0 #FFF,  
-      1px -1px 0 #FFF,
-      -1px 1px 0 #FFF,
-       1px 1px 0 #FFF;
   color: #F64C72;
   text-align: center;
-  font-size: 5em;
 }
 
 .categories {
   color: #FFFFFF;
   text-align: center;
-  font-size: 1.5em;
 }
 
 .fixed-nav-bar {
@@ -87,7 +193,6 @@ html {
 #resume{
   position: absolute;
   top: 50%;
-  left: 15%;
   transform: translate(0%, -50%);
   display:none;
 }
@@ -95,17 +200,15 @@ html {
 #projects{
   position: absolute;
   top: 50%;
-  left: 30%;
   transform: translate(0%, -50%);
   display:none;
-  padding:7%;
+  
   text-decoration: underline;
 }
 
 #about{
   position: absolute;
   top: 50%;
-  right: 30%;
   transform: translate(0%, -50%);
   display:none;
   padding:7%;
@@ -115,21 +218,17 @@ html {
 #contact {
   position: absolute;
   top: 50%;
-  right:10%;
   transform: translate(0%, -50%);
   display:none;
-  padding:7%;
   text-decoration: underline;
 }
 
 #resume a {
-  padding:7%;
   color: #FFFFFF;
 }
 
 .projects h3 {
   color: #2F2FA2;
-  font-size: 2.2em;
   margin-block-start: 0px;
   margin-block-end: 0px;
   margin-inline-start: 0px;
@@ -138,7 +237,6 @@ html {
 
 .projects h4 {
   color: #F64C72;
-  font-size: 1em;
   margin-block-start: 0px;
   margin-block-end: 0px;
   margin-inline-start: 0px;
@@ -154,14 +252,8 @@ html {
   border-color: white;
 }
 
-.proj {
-  width: 100vw;
-  height: 100vh;
-}
-
 .scroll {
   display: none;
-  margin-top: 80vh;
 }
 
 .scroll p {
@@ -185,16 +277,9 @@ html {
 }
 
 #home.scroll {
-display: none;
+  display: none;
   float: left;
   margin-left: 10vw;
-}
-
-#clothbox {
-  width: 40vw;
-  height: 55vh;
-  left: 10vw;
-  margin-top: 30vh;
 }
 
 .box::before {
@@ -204,7 +289,7 @@ display: none;
     left: 0;
     width: 100%;
     height: 100%;
-  background-size: cover;
+    background-size: cover;
     opacity: .6;
     z-index: 1;
 }
@@ -219,20 +304,6 @@ display: none;
 
 #baybox::before{
   background-image: url(../documents/baybox.jpg);
-}
-
-#retirebox {
-  width: 40vw;
-  height: 50vh;
-  right: 10vw;
-  margin-top: 20vh;
-}
-
-#baybox {
-  width: 40vw;
-  height: 60vh;
-  left: 15vw;
-  margin-top: 15vh;
 }
 
 #retirement a{
@@ -252,8 +323,6 @@ display: none;
   font-size: 1.1em;
   margin-top: 2vh;
   margin-left: 1vw;
-  width: 35vw;
-  height: 47vh;
   z-index: 100;
 }
 
@@ -308,17 +377,8 @@ display: none;
   background-size: cover;
 }
 
-.aboutpar {
-  width: 60vw;
-  height: 60vh;
-font-size: 2em;
-}
-
 .aboutpar p {
-  margin-top:5vw;
-  width: 55vw;
   position: absolute;
-  left: 30vw;
   color: #FFF;
 }
 
@@ -335,19 +395,14 @@ font-size: 2em;
   background-repeat: no-repeat;
   background-size: cover;
   border-style: solid;
-  border-color: white;;
+  border-color: white;
 }
 
 #contacttext {
   position: absolute;
-  font-size: 2.2em;
   margin-left: 1vw;
   top: 50%;
   transform: translate(0, -50%);
-}
-
-#linkedin, #email {
-  font-size: 1.7em;
 }
 
 #contacttext a{
