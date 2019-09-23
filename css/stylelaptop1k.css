@@ -1,0 +1,366 @@
+body {
+  background-color: #2F2FA2;
+  font-family: "avenir", "Sans-serif", Arial;
+  font-size: 100%;
+  height:100%;
+  margin:0;
+}
+
+html {
+  height:100%;
+}
+
+#top, #bottom, #left, #right {
+    display: none;
+	background: #F64C72;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+#namebox {
+    width: 45vw;
+      height: 40vh;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../documents/nameimg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-style: solid;
+  border-color: white;
+}
+
+#name {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-text-stroke: 1px white;
+  color: #F64C72;
+  text-align: center;
+       font-size: 5em;
+      text-shadow:
+       3px 3px 0 #FFF,
+     -1px -1px 0 #FFF,  
+      1px -1px 0 #FFF,
+      -1px 1px 0 #FFF,
+       1px 1px 0 #FFF;
+}
+
+.categories {
+  color: #FFFFFF;
+  text-align: center;
+    font-size: 1.5em;
+}
+
+.fixed-nav-bar {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 100px;
+  padding: 0 25px;
+  box-sizing: border-box;
+  background-color: #553D67;
+  box-shadow: 0 0 15px 2px rgba(0,0,0,0.5);
+  z-index: 100;
+  transition: 0.35s ease;
+}
+
+#resume{
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  display:none;
+  left: 15%;
+}
+
+#projects{
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  display:none;
+  left: 30%;
+        padding:7%;
+  text-decoration: underline;
+}
+
+#about{
+     right: 30%;
+        padding:7%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  display:none;
+  padding:7%;
+  text-decoration: underline;
+}
+
+#contact {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  display:none;
+  text-decoration: underline;
+    right:10%;
+        padding: 7%;
+}
+
+#resume a {
+  color: #FFFFFF;
+    padding:7%;
+}
+
+.proj {
+  width: 100vw;
+  height: 100vh;
+}
+
+.projects h3 {
+  color: #2F2FA2;
+    font-size: 2.2em;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.projects h4 {
+  color: #F64C72;
+    font-size: 1em;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+
+.box {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  border-style: solid;
+  border-color: white;
+}
+
+.scroll {
+  display: none;
+    margin-top: 80vh;
+}
+
+.scroll p {
+  text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: black;
+  font-size: 1.5em;
+  -webkit-text-stroke: 0.3px white;
+  text-shadow:
+       2px 2px 0 #FFF,
+     -1px -1px 0 #FFF,  
+      1px -1px 0 #FFF,
+      -1px 1px 0 #FFF,
+       1px 1px 0 #FFF;
+}
+
+#down.scroll {
+  float: right;
+  margin-right: 10vw;
+}
+
+#home.scroll {
+  display: none;
+  float: left;
+  margin-left: 10vw;
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: .6;
+    z-index: 1;
+}
+
+    #clothbox {
+        width: 40vw;
+        height: 55vh;
+        left: 10vw;
+        margin-top: 30vh;
+    }
+    
+    #retirebox {
+        width: 40vw;
+        height: 50vh;
+        right: 10vw;
+        margin-top: 20vh;
+        }
+
+    #baybox {
+        width: 40vw;
+    height: 60vh;
+        left: 15vw;
+        margin-top: 15vh;
+    }
+
+#clothbox::before{
+  background-image: url(../documents/sticks.jpg);
+}
+
+#retirebox::before{
+  background-image: url(../documents/retirebox.jpg);
+}
+
+#baybox::before{
+  background-image: url(../documents/baybox.jpg);
+}
+
+#retirement a{
+  padding:0;
+}
+
+.text {
+  position:relative;
+  -webkit-text-stroke: 0.3px white;
+  text-shadow:
+       2px 2px 0 #FFF,
+     -1px -1px 0 #FFF,  
+      1px -1px 0 #FFF,
+      -1px 1px 0 #FFF,
+       1px 1px 0 #FFF;
+  color: black;
+  font-size: 1.1em;
+  margin-top: 2vh;
+  margin-left: 1vw;
+  z-index: 100;
+    width: 35vw;
+        height: 47vh;
+}
+
+.projects {
+  padding:0%;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+}
+
+.parallax1 {
+  background-image: url('../documents/flowers.jpg');
+  height:100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  background-image: url('../documents/retirement.jpg');
+  height:100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3 {
+  background-image: url('../documents/Bristol_Bay_Pic2.jpg');
+  height:100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  color:#FFFFFF;
+  text-align: left;
+}
+
+.parallax4 {
+  background-image: url('../documents/about.jpg');
+  height:100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+    .aboutpar {
+  width: 60vw;
+  height: 60vh;
+  font-size: 2em;
+}
+
+.aboutpar p {
+  position: absolute;
+  color: #FFF;
+  margin-top:5vw;
+  width: 55vw;
+  left: 30vw;
+}
+
+.contact {
+  width: 40vw;
+  height: 20vw;
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../documents/contact.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-style: solid;
+  border-color: white;
+    
+}
+
+#contacttext {
+  position: absolute;
+  margin-left: 1vw;
+  top: 50%;
+  transform: translate(0, -50%);
+    font-size: 2.2em;
+}
+
+#linkedin, #email {
+  font-size: 1.7em;
+}
+
+#contacttext a{
+  color: #F64C72;
+  text-decoration-color: #F64C72;
+  padding:3%;
+  -webkit-text-stroke: 1px white;
+  text-shadow:
+       2px 2px 0 #FFF,
+     -1px -1px 0 #FFF,  
+      1px -1px 0 #FFF,
+      -1px 1px 0 #FFF,
+       1px 1px 0 #FFF;
+}
