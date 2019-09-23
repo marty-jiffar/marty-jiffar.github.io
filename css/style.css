@@ -185,6 +185,7 @@ html {
 }
 
 #home.scroll {
+display: none;
   float: left;
   margin-left: 10vw;
 }
