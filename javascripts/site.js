@@ -54,7 +54,6 @@ $(document).ready(function() {
         $.when($(".homepage").fadeOut(700))
         .done(function() {
             $(".about").fadeIn(700)
-            $(".scroll").fadeIn(1700);
         });
     });
     

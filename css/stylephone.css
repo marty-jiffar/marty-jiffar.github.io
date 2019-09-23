@@ -298,17 +298,18 @@ html {
 }
 
     .aboutpar {
-  width: 60vw;
+  width: 80vw;
   height: 60vh;
-  font-size: 2em;
+  font-size: 1.2em;
 }
 
 .aboutpar p {
   position: absolute;
   color: #FFF;
   margin-top:5vw;
-  width: 55vw;
-  left: 30vw;
+  width: 80vw;
+  left: 6vw;
+  margin-top: 10vh;
 }
 
 .contact {
