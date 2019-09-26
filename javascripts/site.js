@@ -15,7 +15,7 @@ $(document).ready(function() {
             $("#about.col-3").fadeIn(2500);
             console.log('about');
             $("#contact.col-3").fadeIn(2800);
-            $("#name.display2").fadeIn(3000);
+            $("#name").fadeIn(3000);
             console.log('name');
         });
     }

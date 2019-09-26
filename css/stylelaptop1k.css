@@ -10,17 +10,23 @@ html {
   height:100%;
 }
 
-@media (min-width: 500px) {  
+@media (min-width: 300px) {  
   h1 {font-size:5.3rem;} /*1rem = 16px*/
  body{
-     font-size:1.4rem;
+     font-size:1rem;
     }
     #namebox.container{
-        width:80%;
+        width:100%;
+    }
+}
+
+@media (min-width: 300px) {
+    body{
+        font-size:1.3rem;
     }
 }
  
-@media (min-width: 780px) {  
+@media (min-width: 768px) {  
   h1 {font-size:7rem;} /*1rem = 16px*/
  body{
      font-size:1.5rem;
@@ -30,7 +36,19 @@ html {
     }
 }
 
-@media (min-width: 1000px) {  
+@media (min-width: 992px) {  
+  h1 {font-size:8rem;} /*1rem = 16px*/ 
+    body{
+    font-size:1.5rem;
+    }
+    
+    #namebox.container{
+        width: 50%;
+        height: 40%;
+    }
+}
+
+@media (min-width: 1200px) {  
   h1 {font-size:8rem;} /*1rem = 16px*/ 
     body{
     font-size:1.5rem;
@@ -67,30 +85,15 @@ html {
 }
 
 #namebox.container {
+    display: none;
   height: 40%;
-  display: none;
   background-image: url(../documents/nameimg2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-style: solid;
   border-color: white;
-}
-
-#namebox.vertical-center {
-    display:none;
-    align-items: center;
-}
-
-
-.display2{
-    display:none;
-justify-content: center;
-    align-items: center;
-    width:100%;
-    min-height:100%;
-    padding: 20%;
-  -webkit-text-stroke: 1px white;
+      -webkit-text-stroke: 1px white;
   color: #F64C72;
       text-shadow:
        3px 3px 0 #FFF,
@@ -99,6 +102,10 @@ justify-content: center;
       -1px 1px 0 #FFF,
        1px 1px 0 #FFF;
     align-items:center;
+}
+
+#name {
+    display: none;
 }
 
 .vertical-center {
@@ -127,27 +134,26 @@ justify-content: center;
   transition: 0.35s ease;
 }
 
-.container text-center{
+.row text-center{
     min-height: 100%;
     display: flex;
     align-items: center;
-}
-
-.row{
-    height: 100%;
-    color: #FFFFFF;
-    text-decoration: underline;
-    padding:0%;
+    justify-content: center;
+    
 }
 
 
 #categories.row {
+    width:100%;
     margin-top: auto;
     margin-bottom: auto;
+    color: #FFF;
+    text-align: center;
 }
 
 #resume{
   display:none;
+
 }
 
 #projects{
