@@ -2,10 +2,11 @@
 <html>
     <head>
         <title>Marty</title>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel='stylesheet' media='screen and (min-width: 1000px)' href='css/stylelaptop1k.css'>
-        <link rel='stylesheet' media='screen and (max-width: 750px)' href='css/stylephone.css'>
+        <link rel='stylesheet' media='screen' href='css/stylelaptop1k.css'>
+      <!--->  <link rel='stylesheet' media='screen and (max-width: 750px)' href='css/stylephone.css'> <!---->
         
     </head>
     
@@ -14,23 +15,25 @@
         <div id="right"></div>
         <div id="top"></div>
         <div id="bottom"></div>
-        <div class="homepage">
-            <div class="container" id = "namebox">
-            <div class="jumbotron" id="name"><span><h1>marty</h1></span></div>
+        <div id="homepage" class="container d-flex justify-content-center align-items-center">
+            <div class="container vertical-center" id = "namebox">
+            <div class="display2" id="name"><h1>marty</h1></div>
             </div>
-            <div class="fixed-nav-bar">
-                <div class="container">
-                    <div class = 'col'>
-                        <span id="resume"><a href="documents/Marty_Resume.pdf">resume</a></span>
-                    </div>
-                    <div class = 'col'>
-                    <span id="projects">projects</span>
-                    </div>
-                    <div class = 'col'>
-                    <span id="about">about</span>
-                    </div>
-                    <div class = 'col'>
-                    <span id="contact">contact</span>
+            <div id="fixed-nav-bar" class = "container-fluid d-flex justify-content-center align-items-center">
+                <div class="container text-center ">
+                    <div id = categories class='row vertical-center'>
+                        <div class = 'col-3'>
+                            <a href="documents/Marty_Resume.pdf" style='color:white;'>resume</a>
+                        </div>
+                        <div class = 'col-3'>
+                        projects
+                        </div>
+                        <div class = 'col-3'>
+                        about
+                        </div>
+                        <div class = 'col-3'>
+                        contact
+                        </div>
                     </div>
                 </div>
             </div>
