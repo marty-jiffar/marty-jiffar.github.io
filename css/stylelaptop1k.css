@@ -11,7 +11,7 @@ html {
 }
 
 #top, #bottom, #left, #right {
-    display: none;
+ //   display: none;
 	background: #F64C72;
 	position: fixed;
 	}
@@ -32,7 +32,7 @@ html {
 #namebox {
     width: 45vw;
       height: 40vh;
-  display: none;
+ // display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -46,7 +46,7 @@ html {
 }
 
 #name {
-  display: none;
+  //display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -70,7 +70,7 @@ html {
 }
 
 .fixed-nav-bar {
-  display: none;
+ // display: none;
   position: fixed;
   top: 0;
   left: 0;

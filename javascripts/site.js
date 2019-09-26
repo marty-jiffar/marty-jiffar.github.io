@@ -1,6 +1,7 @@
 $(document).ready(function() {
     
     function load_homepage(){
+        /*
         $.when($("#namebox").fadeIn(1000))
         .done(function() {
             $(".fixed-nav-bar").fadeIn(300);
@@ -22,6 +23,7 @@ $(document).ready(function() {
     }
     
     load_homepage();
+    */
     
     $("#projects").click(function() {
         $.when($(".homepage").fadeOut(500))
