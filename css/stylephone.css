@@ -89,6 +89,7 @@ html {
     width:100%;
 }
 
+/*
 #resume{
   display:none;
   padding: 1vw;
@@ -110,7 +111,7 @@ html {
   display:none;
   text-decoration: underline;
   padding: 1vw;
-}
+} */
 
 #resume a {
   color: #FFFFFF;
