@@ -29,7 +29,7 @@ html {
 		#top { top: 0; }
 		#bottom { bottom: 0; }
 
-#namebox {
+#namebox.container {
     width: 45vw;
       height: 40vh;
  // display: none;
@@ -45,12 +45,12 @@ html {
   border-color: white;
 }
 
-#name {
+.jumbotron {
   //display: none;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  //top: 50%;
+  //left: 50%;
+  //transform: translate(-50%, -50%);
   -webkit-text-stroke: 1px white;
   color: #F64C72;
   text-align: center;
