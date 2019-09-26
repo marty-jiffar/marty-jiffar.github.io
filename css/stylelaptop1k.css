@@ -3,41 +3,42 @@ body {
   font-family: "avenir", "Sans-serif", Arial;
   height:100%;
   margin:0;
-    font-size:20px;
+    font-size:25px;
 }
 
 html {
   height:100%;
 }
 
-*/
-/* Small devices (landscape phones, 544px and up) */
-@media (min-width: 544px) {  
-  h1 {font-size:2rem;} /*1rem = 16px*/
-    body{
-    font-size:1rem;
+@media (min-width: 500px) {  
+  h1 {font-size:5.3rem;} /*1rem = 16px*/
+ body{
+     font-size:1.4rem;
+    }
+    #namebox.container{
+        width:80%;
     }
 }
  
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {  
-  h1 {font-size:3.5rem;} /*1rem = 16px*/
-    font-size:2rem;
-}
- 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-  h1 {font-size:4.3rem;} /*1rem = 16px*/
-    body{
-    font-size:1.3rem;
+@media (min-width: 780px) {  
+  h1 {font-size:7rem;} /*1rem = 16px*/
+ body{
+     font-size:1.5rem;
+    }
+    #namebox.container{
+        width:60%;
     }
 }
- 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
+
+@media (min-width: 1000px) {  
   h1 {font-size:8rem;} /*1rem = 16px*/ 
     body{
     font-size:1.5rem;
+    }
+    
+    #namebox.container{
+        width: 50%;
+        height: 40%;
     }
 }
 
@@ -66,7 +67,6 @@ html {
 }
 
 #namebox.container {
-    width: 50%;
       height: 40%;
  // display: none;
   background-image: url(../documents/nameimg2.jpg);
