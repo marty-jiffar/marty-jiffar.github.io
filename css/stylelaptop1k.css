@@ -43,7 +43,7 @@ html {
 }
 
 #top, #bottom, #left, #right {
- //   display: none;
+    display: none;
 	background: #F64C72;
 	position: fixed;
 	}
@@ -67,8 +67,8 @@ html {
 }
 
 #namebox.container {
-      height: 40%;
- // display: none;
+  height: 40%;
+  display: none;
   background-image: url(../documents/nameimg2.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -78,13 +78,13 @@ html {
 }
 
 #namebox.vertical-center {
-    display: flex;
+    display:none;
     align-items: center;
 }
 
 
 .display2{
-  display: flex;
+    display:none;
 justify-content: center;
     align-items: center;
     width:100%;
@@ -113,7 +113,7 @@ justify-content: center;
 }
 
 #fixed-nav-bar {
- // display: none;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -146,50 +146,23 @@ justify-content: center;
     margin-bottom: auto;
 }
 
-/*
 #resume{
-  position: absolute;
-  top: 50%;
-  transform: translate(0%, -50%);
   display:none;
-  left: 15%;
 }
 
 #projects{
-  position: absolute;
-  top: 50%;
-  transform: translate(0%, -50%);
   display:none;
-  left: 30%;
-        padding:7%;
-  text-decoration: underline;
 }
 
 #about{
-     right: 30%;
-        padding:7%;
-  position: absolute;
-  top: 50%;
-  transform: translate(0%, -50%);
   display:none;
-  padding:7%;
-  text-decoration: underline;
 }
 
 #contact {
-  position: absolute;
-  top: 50%;
-  transform: translate(0%, -50%);
   display:none;
-  text-decoration: underline;
-    right:10%;
-        padding: 7%;
 }
 
-#resume a {
-  color: #FFFFFF;
-    padding:7%;
-} */
+/*
 
 .proj {
   width: 100vw;

@@ -1,21 +1,21 @@
 $(document).ready(function() {
     function load_homepage(){
-        $.when($("#namebox").fadeIn(1000))
+        $.when($("#namebox.container").fadeIn(1000))
         .done(function() {
-            $(".fixed-nav-bar").fadeIn(300);
+            $(".fixed-nav-bar.container-fluid").fadeIn(300);
             $("#bottom").fadeIn(500);
             $("#left").fadeIn(500);
             console.log('left');
             $("#right").fadeIn(500);
-            $("#resume").fadeIn(900);
+            $("#resume.col-3").fadeIn(900);
             $("#top").fadeIn(1500);
             console.log("top");
-            $("#projects").fadeIn(1500);
+            $("#projects.col-3").fadeIn(1500);
             console.log('projects');
-            $("#about").fadeIn(2500);
+            $("#about.col-3").fadeIn(2500);
             console.log('about');
-            $("#contact").fadeIn(2800);
-            $("#name").fadeIn(3000);
+            $("#contact.col-3").fadeIn(2800);
+            $("#name.display2").fadeIn(3000);
             console.log('name');
         });
     }
