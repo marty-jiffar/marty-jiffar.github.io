@@ -1,33 +1,48 @@
 $(document).ready(function() {
     function load_homepage(){
-        $.when($("#namebox.container").fadeIn(1000))
+        $.when($("#homepage").css("display", "flex").hide().fadeIn(1000))
         .done(function() {
-            $(".fixed-nav-bar.container-fluid").fadeIn(300);
-            $("#bottom").fadeIn(500);
-            $("#left").fadeIn(500);
-            console.log('left');
-            $("#right").fadeIn(500);
-            $("#resume.col-3").fadeIn(900);
-            $("#top").fadeIn(1500);
-            console.log("top");
-            $("#projects.col-3").fadeIn(1500);
-            console.log('projects');
-            $("#about.col-3").fadeIn(2500);
-            console.log('about');
-            $("#contact.col-3").fadeIn(2800);
+            $("#namebox").css("display", "flex").hide().fadeIn(1000)
+            $("#fixed-nav-bar").fadeIn(300);
+            $("#resume").fadeIn(900);
+            $("#projects").fadeIn(1500);
+            $("#about").fadeIn(2500);
+            $("#contact").fadeIn(2800);
             $("#name").fadeIn(3000);
-            console.log('name');
         });
-    }
+    };
     
     load_homepage();
     
-    $("#projects").click(function() {
-        $.when($(".homepage").fadeOut(500))
+    function unload_homepage(){
+        $("#name").fadeOut(800)
+        $("#contact").fadeOut(800);
+        $("#about").fadeOut(800);
+        $("#projects").fadeOut(800);
+        $("#resume").fadeOut(800);
+        $("#fixed-nav-bar").fadeOut(800);
+        $("#namebox.container").fadeOut(800);
+        $("#homepage").fadeOut(1000);
+    }
+    
+    function page_load(page_name){
+        $.when(unload_homepage())
         .done(function() {
-            $(".projects").fadeIn(700);
+            $(page_name).fadeIn(1000);
             $(".scroll").fadeIn(1700);
         });
+    }
+    
+    $("#projects").click(function() {
+        page_load('.projects');
+    });
+    
+    $("#about").click(function() {
+        page_load('.about');
+    });
+    
+    $("#contact").click(function() {
+        page_load('.contact');
     });
     
     $("#down.scroll").on('click', function(event) {
@@ -45,23 +60,7 @@ $(document).ready(function() {
     });
     
     $("#home.scroll").on('click', function(event) {
-        $("div:visible").fadeOut(500);
         load_homepage();
-    });
-    
-    $("#about").click(function() {
-        $.when($(".homepage").fadeOut(700))
-        .done(function() {
-            $(".about").fadeIn(700)
-        });
-    });
-    
-    $("#contact").click(function() {
-        $.when($(".homepage").fadeOut(700))
-        .done(function() {
-            $(".contact").fadeIn(700)
-            $(".scroll").fadeIn(1700);
-        });
     });
 
 });
