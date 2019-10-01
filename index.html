@@ -3,7 +3,7 @@
     <head>
         <title>Marty</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel='stylesheet' media='screen' href='css/stylelaptop1k.css'>
         
@@ -21,88 +21,95 @@
         <div id="right"></div>
         <div id="top"></div>
         <div id="bottom"></div>
-        <div id="homepage" class="container justify-content-center align-items-center">
-            <div class="container justify-content-center align-items-center" id = "namebox">
-                <div id = "name"><h1>marty</h1></div>
+        <div id="fixed-nav-bar" class = "container-fluid justify-content-center align-items-center">
+            <div id = categories class='row text-center'>
+                <div id='resume' class = 'col-3 d-flex justify-content-center'>
+                    <a href="documents/Marty_Resume.pdf" style='color:white;'>resume</a>
+                </div>
+                <div id = 'projects' class = 'col-3 d-flex justify-content-center'>
+                projects
+                </div>
+                <div id = 'about' class = 'col-3 d-flex justify-content-center'>
+                about
+                </div>
+                <div id = 'contact' class = 'col-3 d-flex justify-content-center'>
+                contact
+                </div>
             </div>
-            <div id="fixed-nav-bar" class = "container-fluid d-flex justify-content-center align-items-center">
-                    <div id = categories class='row text-center'>
-                        <div id='resume' class = 'col-3 d-flex justify-content-center'>
-                            <a href="documents/Marty_Resume.pdf" style='color:white;'>resume</a>
-                        </div>
-                        <div id = 'projects' class = 'col-3 d-flex justify-content-center'>
-                        projects
-                        </div>
-                        <div id = 'about' class = 'col-3 d-flex justify-content-center'>
-                        about
-                        </div>
-                        <div id = 'contact' class = 'col-3 d-flex justify-content-center'>
-                        contact
-                        </div>
-                    </div>
+        </div>
+        <div id="homepage" class="container justify-content-center align-items-center">
+            <div class="text-center" id = "namebox">
+                <h1 id="name">marty</h1>
             </div>
         </div>
         
         
-        <div class = "projects">
-            <div style="float:left;" class= "proj" id="triplets">
-                <div id="down" class="scroll">
-                    <p><em>Scroll</em></p>
-                 <img src="documents/scroll.png" height='50' width='50'>
-                </div>
-                <div class="box" id="clothbox">
-                <div id="triplettext" class="text">
-                <a href='https://github.com/marty-jiffar/triplets'>
-                <h3>Cloth Perception Experiment</h3></a>
-                    <br>
-                <h4><em>Description:</em></h4>
-                <p>An ongoing experiment in Prof. Bei Xiao's computer science lab at American University studying human perception of simulated cloths.</p>
-                    <br>
-                    <h4><em>Languages:</em></h4>
-                    <p>Python, JavaScript, HTML, CSS</p>
-                    </div>
+        <div class = "container-fluid" id="projects_cont">
+            <div style="float:right;" id="down" class="scroll">
+                <p><em>Scroll</em></p>
+             <img src="documents/scroll.png" height='50' width='50'>
+            </div>
+            <div style = "float:left;" class="row box" id="clothbox">
+            <div id="triplettext" class="text">
+            <a href='https://github.com/marty-jiffar/triplets'>
+            <h3 style="text-decoration: underline">Cloth Perception Experiment</h3></a>
+                <br>
+            <h4><em>Description:</em></h4>
+            <p>An ongoing experiment in Prof. Bei Xiao's computer science lab at American 
+                University studying human perception of simulated cloths.</p>
+                <br>
+                <h4><em>Languages:</em></h4>
+                <p>Python, JavaScript, HTML, CSS</p>
                 </div>
             </div>
+            
             <div class="parallax1"></div>
             
-            <div style="float:right;" class="proj" id="retirement">
-                <div id = "down" class="scroll">
-                    <p><em>Scroll</em></p>
-                 <img src="documents/scroll.png" height='50' width='50'>
-                </div>
-                <div style="float:right;" class="box" id="retirebox">
-                <div id="retiretext" class="text">
-                <a href='https://github.com/marty-jiffar/Retirement-Calculator'>
-                <h3>Retirement Calculator</h3></a>
-                    <br>
-                    <h4><em>Description:</em></h4>
-                    <p>Inspired by<!---><!---><a href="https://firecalc.com" style="color:lightpink;"> FireCalc</a><!---><!--->, a calculator that uses data from the S&ampP 500 to determine how a given retirement portfolio and yearly spending would have fared historically.</p>
-                    <br>
-                    <h4><em>Languages:</em></h4>
-                    <p>Python</p>
-                    </div>
-                </div>
-                
+            <div id = "down" class="scroll">
+                <p><em>Scroll</em></p>
+             <img src="documents/scroll.png" height='50' width='50'>
             </div>
+            <div style="float:right;" class="row box" id="retirebox">
+            <div id="retiretext" class="text">
+            <a href='https://github.com/marty-jiffar/Retirement-Calculator'>
+            <h3 style="text-decoration: underline">Retirement Calculator</h3></a>
+                <br>
+                <h4><em>Description:</em></h4>
+                <p>Inspired by<!---><!---><a href="https://firecalc.com" style="color:lightpink;"> FireCalc</a><!---><!--->, 
+                    a calculator that uses data from the S&ampP 500 to determine how a given retirement portfolio and yearly 
+                    spending would have fared historically.</p>
+                <br>
+                <h4><em>Languages:</em></h4>
+                <p>Python</p>
+                </div>
+            </div>
+            
             <div class ="parallax2"></div>
-            <div style="float:left;" class="proj" id="bristolbay">
+            
+            <div style="float:left;" class="row" id="bristolbay">
                 <div id = "home" class="scroll">
                     <p><em>Home</em></p>
                  <img src="documents/back.png" height='50' width='50'>
                 </div>
                 <div class="box" id="baybox">
-                <div id = "baytext" class="text">
-                <h3>Bristol Bay Pay Day</h3>
-            <br>
-                    <h4><em>Description:</em></h4>
-                <p>Inspired by my first salmon season in Alaska last summer. It is a predictive model that uses previous years' ex-vessel salmon prices and economic data from the United States and Japan (where a large portion of Alaskan salmon is sold) to estimate an answer to a question on every fisherman's mind: what's the price per pound this season?</p>
-                    <br>
-                    <h4><em>Languages:</em></h4>
-                    <p>Python</p>
+                    <div id = "baytext" class="text">
+                        <h3>Bristol Bay Pay Day</h3>
+                        <br>
+                        <h4><em>Description:</em></h4>
+                        <p>Inspired by my first salmon season in Alaska last summer. It is a predictive 
+                        model that uses previous years' ex-vessel salmon prices and economic data 
+                        from the United States and Japan (where a large portion of Alaskan salmon 
+                        is sold) to estimate an answer to a question on every fisherman's mind: 
+                        what's the price per pound this season?</p>
+                        <br>
+                        <h4><em>Languages:</em></h4>
+                        <p>Python</p>
                     </div>
+                </div>
             </div>
-            </div>
+            
             <div class="parallax3"></div>
+            
         </div>
         
         <div class = "about">

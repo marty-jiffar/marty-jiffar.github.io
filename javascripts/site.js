@@ -3,16 +3,18 @@ $(document).ready(function() {
         $.when($("#homepage").css("display", "flex").hide().fadeIn(1000))
         .done(function() {
             $("#namebox").css("display", "flex").hide().fadeIn(1000)
-            $("#fixed-nav-bar").fadeIn(300);
+            $("#fixed-nav-bar").css("display", "flex").hide().fadeIn(300);
             $("#resume").fadeIn(900);
             $("#projects").fadeIn(1500);
             $("#about").fadeIn(2500);
             $("#contact").fadeIn(2800);
-            $("#name").fadeIn(3000);
+            $("#name").css("display", "flex").hide().fadeIn(3000);
         });
     };
     
     load_homepage();
+    
+    var current_page;
     
     function unload_homepage(){
         $("#name").fadeOut(800)
@@ -33,16 +35,23 @@ $(document).ready(function() {
         });
     }
     
+    function page_unload(){
+        $("div:visible").fadeOut(500);
+    }
+    
     $("#projects").click(function() {
-        page_load('.projects');
+        page_load('#projects_cont');
+        current_page = '#projects_cont';
     });
     
     $("#about").click(function() {
         page_load('.about');
+        current_page = '.about';
     });
     
     $("#contact").click(function() {
         page_load('.contact');
+        current_page = '.contact';
     });
     
     $("#down.scroll").on('click', function(event) {
@@ -60,6 +69,7 @@ $(document).ready(function() {
     });
     
     $("#home.scroll").on('click', function(event) {
+        page_unload();
         load_homepage();
     });
 
