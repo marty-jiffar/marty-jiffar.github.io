@@ -115,6 +115,11 @@ html {
     h3 {
         font-size: 2.5rem;
     }
+    
+    .aboutpar {
+        font-size: 2.3rem;
+        width: 60vw;
+    }
 }
 
 #top, #bottom, #left, #right {
@@ -354,7 +359,7 @@ html {
     background-size: cover;
 }
 
-.about {
+#aboutsection {
     display: none;
     width: 100vw;
     height: 100vh;
@@ -372,17 +377,8 @@ html {
 }
 
 .aboutpar {
-    width: 60vw;
-    height: 60vh;
-    font-size: 2em;
-}
-
-.aboutpar p {
-    position: absolute;
+    margin: 5%;
     color: #FFF;
-    margin-top:5vw;
-    width: 55vw;
-    left: 30vw;
 }
 
 .contact {

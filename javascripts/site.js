@@ -35,8 +35,8 @@ $(document).ready(function() {
         });
     }
     
-    function page_unload(){
-        $("div:visible").fadeOut(500);
+    function page_unload(page_name){
+        $(page_name).fadeOut(1000);
     }
     
     $("#projects").click(function() {
@@ -45,8 +45,8 @@ $(document).ready(function() {
     });
     
     $("#about").click(function() {
-        page_load('.about');
-        current_page = '.about';
+        page_load('#aboutsection');
+        current_page = '#aboutsection';
     });
     
     $("#contact").click(function() {
@@ -60,6 +60,10 @@ $(document).ready(function() {
             w = w * 2;
         } else if (window.pageYOffset >= 2 * w && window.pageYOffset < 3 * w) {
             w = w * 3;
+        } else if (window.pageYOffset >= 3 * w && window.pageYOffset < 4 * w) {
+            w = w * 4;
+        } else if (window.pageYOffset >= 4 * w && window.pageYOffset < 5 * w) {
+            w = w * 5;
         }
         window.scrollTo({ 
             top: w,
@@ -69,7 +73,7 @@ $(document).ready(function() {
     });
     
     $("#home.scroll").on('click', function(event) {
-        page_unload();
+        page_unload(current_page);
         load_homepage();
     });
 
