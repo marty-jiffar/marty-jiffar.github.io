@@ -71,23 +71,23 @@ html {
     }
 }
 
-@media (min-width: 992px) {  
-    #name {font-size:7rem;} /*1rem = 16px*/ 
+@media (min-width: 992px) {
+    #name {font-size:8rem;} 
     #categories.row{
         font-size:1.5rem;
     }
     #namebox{
-        width: 66%;
+        width: 80%;
     }
 
 }
 
 @media (min-width: 1200px) {  
-    #name {font-size:8rem;} /*1rem = 16px*/ 
+    #name {font-size:8rem;} 
     #categories.row{
         font-size:1.5rem;
     }
-    #namebox{
+    .mainbox{
         width: 50%;
     }
     
