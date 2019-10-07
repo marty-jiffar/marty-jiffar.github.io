@@ -252,7 +252,6 @@ html {
 
 .scroll {
     display: none;
-    margin-top: 85vh;
 }
 
 .scroll p {
@@ -267,6 +266,8 @@ html {
       1px -1px 0 #FFF,
       -1px 1px 0 #FFF,
        1px 1px 0 #FFF;
+    
+  margin-top: 80vh;
 }
 
 #down.scroll {
@@ -383,7 +384,7 @@ html {
 
 .contact {
     width: 40vw;
-    height: 20vw;
+    height: 50vh;
     display: none;
     position: absolute;
     left: 50%;

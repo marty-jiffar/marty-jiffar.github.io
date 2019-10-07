@@ -1,17 +1,128 @@
 body {
-  background-color: #2F2FA2;
-  font-family: "avenir", "Sans-serif", Arial;
-  font-size: 100%;
-  height:100%;
-  margin:0;
+    background-color: #2F2FA2;
+    font-family: "avenir", "Sans-serif", Arial;
+    height:100%;
+    margin:0;
+    font-size:10px;
 }
 
 html {
-  height:100%;
+    height:100%;
+}
+
+@media (min-width: 150px) {  
+    #name {font-size:5.3rem;} /*1rem = 16px*/
+    #categories.row{
+        font-size:1rem;
+    }
+    #namebox.container{
+        width:100%;
+    }
+    
+    body {
+        font-size: 0.8rem;
+    }
+    
+    #clothbox {
+        width: 80%;
+        height: 55vh;
+        left: 5%;
+        margin-top: 30%;
+    }
+
+    #retirebox {
+        width: 40vw;
+        height: 50vh;
+        right: 10vw;
+        margin-top: 20vh;
+    }
+
+    #baybox {
+        width: 40vw;
+        height: 75vh;
+        left: 15vw;
+        margin-top: 15vh;
+    }
+}
+
+
+@media (min-width: 415px) {
+    #categories.row{
+        font-size:1.3rem;
+    }
+    
+    #name {font-size:7rem;}
+    
+    #namebox{
+        width: 100%;
+    }
+}
+ 
+@media (min-width: 768px) {  
+    #name {font-size:7rem;} /*1rem = 16px*/
+    #categories.row{
+        font-size:1.5rem;
+    }
+    #namebox{
+        width:80%;
+    }
+    body {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 992px) {  
+    #name {font-size:7rem;} /*1rem = 16px*/ 
+    #categories.row{
+        font-size:1.5rem;
+    }
+    #namebox{
+        width: 66%;
+    }
+
+}
+
+@media (min-width: 1200px) {  
+    #name {font-size:8rem;} /*1rem = 16px*/ 
+    #categories.row{
+        font-size:1.5rem;
+    }
+    #namebox{
+        width: 50%;
+    }
+    
+    #clothbox {
+        width: 40%;
+        height: 52%;
+        left: 5%;
+        margin-top: 10%;
+    }
+
+    #retirebox {
+        width: 40vw;
+        height: 55vh;
+        right: 10vw;
+        margin-top: 10%;
+    }
+
+    #baybox {
+        width: 40vw;
+        height: 70vh;
+        left: 15vw;
+        margin-top: 5%;
+    }
+    
+    h3 {
+        font-size: 2.5rem;
+    }
+    
+    .aboutpar {
+        font-size: 2.3rem;
+        width: 60vw;
+    }
 }
 
 #top, #bottom, #left, #right {
-    display: none;
 	background: #F64C72;
 	position: fixed;
 	}
@@ -29,214 +140,100 @@ html {
 		#top { top: 0; }
 		#bottom { bottom: 0; }
 
-@media (min-width: 1000px) {
-    #namebox {
-      width: 45vw;
-      height: 40vh;
-    }
-    
-    #name {
-      font-size: 5em;
-      text-shadow:
-       3px 3px 0 #FFF,
-     -1px -1px 0 #FFF,  
-      1px -1px 0 #FFF,
-      -1px 1px 0 #FFF,
-       1px 1px 0 #FFF;
-    }
-    
-    .categories {
-        font-size: 1.5em;
-    }
-    /*
-    #resume {
-        left: 15%;
-    }
-    
-    #projects {
-        left: 30%;
-        padding:7%;
-    }
-    
-    #about {
-        right: 30%;
-        padding:7%;
-    }
-    
-    #contact {
-        right:10%;
-        padding: 7%;
-    }
-    
-    #resume a {
-        padding:7%;
-        
-    }
-    */
-    
-    .proj {
-        width: 100vw;
-        height: 100vh;
-    }
-    
-    .projects h3 {
-        font-size: 2.2em;
-    }
-    
-    .projects h4 {
-        font-size: 1em;
-    }
-    
-    .proj {
-        width: 100vw;
-        height: 100vh;
-    }
-    
-    .scroll{
-      margin-top: 80vh;
-    }
-    
-    #clothbox {
-        width: 40vw;
-        height: 55vh;
-        left: 10vw;
-        margin-top: 30vh;
-    }
-    
-    #retirebox {
-        width: 40vw;
-        height: 50vh;
-        right: 10vw;
-        margin-top: 20vh;
-        }
-
-    #baybox {
-        width: 40vw;
-    height: 60vh;
-        left: 15vw;
-        margin-top: 15vh;
-    }
-    
-    .text {
-        width: 35vw;
-        height: 47vh;
-    }
-    
-    .aboutpar {
-  width: 60vw;
-  height: 60vh;
-  font-size: 2em;
-}
-    .aboutpar p {
-  margin-top:5vw;
-  width: 55vw;
-  left: 30vw;
-}
-    
-    .contact {
-  width: 40vw;
-  height: 20vw;
-}
-    #contacttext {
-        font-size: 2.2em;
-    }
-    
-    #linkedin, #email {
-  font-size: 1.7em;
-}
+#homepage.container{
+    display: none;
+    height: 100%;
+    width: 100%;
+    padding-top: 50px;
 }
 
 #namebox {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url(../documents/nameimg2.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-style: solid;
-  border-color: white;
+    display: none;
+    height: 40%;
+    background-image: url(../documents/nameimg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-style: solid;
+    border-color: white;
+    -webkit-text-stroke: 1px white;
+    color: #F64C72;
+    text-shadow:
+    3px 3px 0 #FFF,
+    -1px -1px 0 #FFF,  
+    1px -1px 0 #FFF,
+    -1px 1px 0 #FFF,
+    1px 1px 0 #FFF;
+    margin:auto;
 }
 
 #name {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-text-stroke: 1px white;
-  color: #F64C72;
-  text-align: center;
+    display: none;
+    margin: auto;
 }
 
-.categories {
-  color: #FFFFFF;
-  text-align: center;
+.vertical-center {
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-.fixed-nav-bar {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  min-height: 100px;
-  padding: 0 25px;
-  box-sizing: border-box;
-  background-color: #553D67;
-  box-shadow: 0 0 15px 2px rgba(0,0,0,0.5);
-  z-index: 100;
-  transition: 0.35s ease;
+#fixed-nav-bar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100px;
+    padding: 0 25px;
+    box-sizing: border-box;
+    background-color: #553D67;
+    box-shadow: 0 0 15px 2px rgba(0,0,0,0.5);
+    z-index: 100;
+    transition: 0.35s ease;
+}
+
+.row text-center{
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#categories.row {
+    text-decoration: underline;
+    width:100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #FFF;
+    text-align: center;
 }
 
 #resume{
-  position: absolute;
-  top: 50%;
-  transform: translate(0%, -50%);
   display:none;
 }
 
 #projects{
-  position: absolute;
-  top: 50%;
-  transform: translate(0%, -50%);
   display:none;
-  
-  text-decoration: underline;
 }
 
 #about{
-  position: absolute;
-  top: 50%;
-  transform: translate(0%, -50%);
   display:none;
-  padding:7%;
-  text-decoration: underline;
 }
 
 #contact {
-  position: absolute;
-  top: 50%;
-  transform: translate(0%, -50%);
   display:none;
-  text-decoration: underline;
 }
 
-#resume a {
-  color: #FFFFFF;
+#projects_cont h3 {
+    color: #2F2FA2;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
-.projects h3 {
-  color: #2F2FA2;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
-.projects h4 {
+#projects_cont h4 {
   color: #F64C72;
   margin-block-start: 0px;
   margin-block-end: 0px;
@@ -254,7 +251,7 @@ html {
 }
 
 .scroll {
-  display: none;
+    display: none;
 }
 
 .scroll p {
@@ -262,7 +259,6 @@ html {
   margin-block-start: 0;
   margin-block-end: 0;
   color: black;
-  font-size: 1.5em;
   -webkit-text-stroke: 0.3px white;
   text-shadow:
        2px 2px 0 #FFF,
@@ -270,6 +266,8 @@ html {
       1px -1px 0 #FFF,
       -1px 1px 0 #FFF,
        1px 1px 0 #FFF;
+    
+  margin-top: 80vh;
 }
 
 #down.scroll {
@@ -280,7 +278,7 @@ html {
 #home.scroll {
   display: none;
   float: left;
-  margin-left: 10vw;
+  margin-left: 3vw;
 }
 
 .box::before {
@@ -296,125 +294,132 @@ html {
 }
 
 #clothbox::before{
-  background-image: url(../documents/sticks.jpg);
+    background-image: url(../documents/sticks.jpg);
 }
 
 #retirebox::before{
-  background-image: url(../documents/retirebox.jpg);
+    background-image: url(../documents/retirebox.jpg);
 }
 
 #baybox::before{
-  background-image: url(../documents/baybox.jpg);
+    background-image: url(../documents/baybox.jpg);
 }
 
 #retirement a{
-  padding:0;
+    padding:0;
 }
 
 .text {
-  position:relative;
-  -webkit-text-stroke: 0.3px white;
-  text-shadow:
-       2px 2px 0 #FFF,
-     -1px -1px 0 #FFF,  
-      1px -1px 0 #FFF,
-      -1px 1px 0 #FFF,
-       1px 1px 0 #FFF;
-  color: black;
-  font-size: 1.1em;
-  margin-top: 2vh;
-  margin-left: 1vw;
-  z-index: 100;
+    position:relative;
+    -webkit-text-stroke: 0.3px white;
+    text-shadow:
+    2px 2px 0 #FFF,
+    -1px -1px 0 #FFF,  
+    1px -1px 0 #FFF,
+    -1px 1px 0 #FFF,
+    1px 1px 0 #FFF;
+    color: black;
+    font-size: 1.1em;
+    margin-top: 2vh;
+    margin-left: 1vw;
+    z-index: 100;
+    padding: 1%;
 }
 
-.projects {
-  padding:0%;
-  display: none;
-  width: 100vw;
-  height: 100vh;
+#projects_cont {
+    display: none;
+    padding:0%;
+    width: 100vw;
+    height: 100vh;
 }
 
 .parallax1 {
-  background-image: url('../documents/flowers.jpg');
-  height:100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url('../documents/flowers.jpg');
+    height:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .parallax2 {
-  background-image: url('../documents/retirement.jpg');
-  height:100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url('../documents/retirement.jpg');
+    height:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .parallax3 {
-  background-image: url('../documents/Bristol_Bay_Pic2.jpg');
-  height:100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url('../documents/Bristol_Bay_Pic2.jpg');
+    height:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.about {
-  display: none;
-  width: 100vw;
-  height: 100vh;
-  color:#FFFFFF;
-  text-align: left;
+#aboutsection {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    color:#FFFFFF;
+    text-align: left;
 }
 
 .parallax4 {
-  background-image: url('../documents/about.jpg');
-  height:100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url('../documents/about.jpg');
+    height:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.aboutpar p {
-  position: absolute;
-  color: #FFF;
+.aboutpar {
+    margin: 5%;
+    color: #FFF;
 }
 
 .contact {
-  width: 40vw;
-  height: 20vw;
-  display: none;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url(../documents/contact.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-style: solid;
-  border-color: white;
+    width: 40vw;
+    height: 50vh;
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../documents/contact.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-color: white;
+    
 }
 
 #contacttext {
-  position: absolute;
-  margin-left: 1vw;
-  top: 50%;
-  transform: translate(0, -50%);
+    position: absolute;
+    margin-left: 1vw;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 2.2em;
+}
+
+#linkedin, #email {
+    font-size: 1.7em;
 }
 
 #contacttext a{
-  color: #F64C72;
-  text-decoration-color: #F64C72;
-  padding:3%;
-  -webkit-text-stroke: 1px white;
-  text-shadow:
-       2px 2px 0 #FFF,
-     -1px -1px 0 #FFF,  
-      1px -1px 0 #FFF,
-      -1px 1px 0 #FFF,
-       1px 1px 0 #FFF;
+    color: #F64C72;
+    text-decoration-color: #F64C72;
+    padding:3%;
+    -webkit-text-stroke: 1px white;
+    text-shadow:
+    2px 2px 0 #FFF,
+    -1px -1px 0 #FFF,  
+    1px -1px 0 #FFF,
+    -1px 1px 0 #FFF,
+    1px 1px 0 #FFF;
 }
