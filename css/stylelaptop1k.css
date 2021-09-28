@@ -1,5 +1,8 @@
 body {
     background-color: #87CEEB;
+    background-image: url(../documents/cloudz.png);
+    background-size: 700px 300px;
+    background-repeat: repeat-y repeat-x;
     font-family: "avenir", "Sans-serif", Arial;
     height:100%;
     margin:0;
@@ -117,25 +120,25 @@ html {
     }
     
     .aboutpar {
-        font-size: 2.3rem;
+        font-size: 2rem;
         width: 60vw;
     }
 }
 
 #top, #bottom, #left, #right {
-	background: #F64C72;
+	background: #f4c2c2;
 	position: fixed;
 	}
 	#left, #right {
 		top: 0; bottom: 0;
-		width: 15px;
+		width: 3px;
 		}
 		#left { left: 0; }
 		#right { right: 0; }
 		
 	#top, #bottom {
 		left: 0; right: 0;
-		height: 15px;
+		height: 3px;
 		}
 		#top { top: 0; }
 		#bottom { bottom: 0; }
@@ -155,9 +158,9 @@ html {
     background-position: center;
     background-size: cover;
     border-style: solid;
-    border-color: white;
+    border-color: #f4c2c2;
     -webkit-text-stroke: 1px white;
-    color: #F64C72;
+    color: #f4c2c2;
     text-shadow:
     3px 3px 0 #FFF,
     -1px -1px 0 #FFF,  
@@ -272,7 +275,8 @@ html {
 
 #down.scroll {
   float: right;
-  margin-right: 10vw;
+  margin-right: 3vw;
+    height: 10vh;
 }
 
 #home.scroll {
@@ -369,7 +373,7 @@ html {
 }
 
 .parallax4 {
-    background-image: url('../documents/about.jpg');
+   /* background-image: url('../documents/about.jpg');*/
     height:100%;
     background-attachment: fixed;
     background-position: center;
@@ -395,7 +399,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     border-style: solid;
-    border-color: white;
+    border-color: #f4c2c2;
     
 }
 
@@ -412,8 +416,8 @@ html {
 }
 
 #contacttext a{
-    color: #F64C72;
-    text-decoration-color: #F64C72;
+    color: #f4c2c2;
+    text-decoration-color: #f4c2c2;
     padding:3%;
     -webkit-text-stroke: 1px white;
     text-shadow:
@@ -423,3 +427,70 @@ html {
     -1px 1px 0 #FFF,
     1px 1px 0 #FFF;
 }
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.box3 {
+  width: 300px;
+  margin: 50px auto;
+  border-radius: 15px;
+  background: #00bfb6;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-weight: 900;
+  font-family: arial;
+  position: relative;
+}
+
+
+/* speech bubble 
+https://codepen.io/run-time/pen/VNRBJd */
+
+
+.bubble {
+  position: relative;
+  width: 50%;
+  background: #f4c2c2;
+  border-radius: 10px;
+  outline-color: black;
+  padding: 24px;
+  text-align: left;
+  color: #fff;
+  margin-top: 5vh;
+}
+
+.bubble-bottom-left:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 24px solid #f4c2c2;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #f4c2c2;
+  border-bottom: 20px solid transparent;
+  left: 32px;
+  bottom: -24px;
+}
+
+
+.bubble-bottom-right:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-right: 24px solid #f4c2c2;
+  border-left: 12px solid transparent;
+  border-top: 12px solid #f4c2c2;
+  border-bottom: 20px solid transparent;
+  right: 32px;
+  bottom: -24px;
+}
+
+.twoone {
+    width: 60%;
+}
+
